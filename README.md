@@ -145,15 +145,13 @@ Detected action clips are converted into VLA-style records with language instruc
 Example record shape:
 
 ```json
-```
-
-
 {
   "video_id": "bartan1",
   "language_instruction": "Track the hand as it moves a utensil or container through the workspace.",
   "coordinate_space": "unit_cube_normalized",
   "embodiment": "Human-to-Humanoid-Unified"
 }
+```
 
 What to notice: raw video has become structured robotics data with language, action, contact, and quality fields.
 
