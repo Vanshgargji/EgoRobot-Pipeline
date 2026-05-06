@@ -1,4 +1,4 @@
-# Labellerr-Aligned Egocentric Robotics Data Factory
+# Egocentric Robotics Data Factory
 
 Turn a raw first-person utensil video into segmented, audited, VLA-ready robotics training data.
 
