@@ -1,0 +1,44 @@
+# Python/cache artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Jupyter/local notebook state
+.ipynb_checkpoints/
+
+# Local environments
+.venv/
+venv/
+env/
+ENV/
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+*.temp
+*.log
+
+# Large local input video
+# GitHub normal pushes reject files over 100 MB. Keep this in Drive/Git LFS
+# and document it as the required input for reproduction.
+bartan1.MP4
+*.mov
+*.MOV
+*.avi
+*.AVI
+*.mkv
+*.MKV
+
+# Derived text extracts from source docs
+# The original PDF/DOCX files remain tracked; these were created only for local inspection.
+Labellerr AI.txt
+Venture Lab Hackathon.txt
+Robotics Data Hackathon — Problem Statement_Final.txt
+
+# Optional rerun outputs not referenced by the README
+Labellerr_outputs_bartan1_highfps/

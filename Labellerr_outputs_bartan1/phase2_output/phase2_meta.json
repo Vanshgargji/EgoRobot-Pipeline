@@ -1,0 +1,10 @@
+{
+  "frames_processed": 1200,
+  "mean_velocity": 65.8922,
+  "p90_velocity": 85.6462,
+  "max_velocity": 122.6482,
+  "closed_gripper_proxy_frames": 1,
+  "feature_file": "phase2_features.jsonl",
+  "velocity_profile": "velocity_profiles/velocity_profile.csv",
+  "method_note": "Zero-shot local proxy: motion saliency and hand-object dynamics, no task-specific labels."
+}

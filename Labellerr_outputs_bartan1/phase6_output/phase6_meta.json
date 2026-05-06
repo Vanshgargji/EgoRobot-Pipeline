@@ -1,0 +1,9 @@
+{
+  "records_total": 12,
+  "records_clean": 12,
+  "records_review": 0,
+  "records_flagged": 0,
+  "jsonl_integrity_rate_percent": 100.0,
+  "schema_validation_rate_percent": 100.0,
+  "output_file": "final_robot_dataset.jsonl"
+}

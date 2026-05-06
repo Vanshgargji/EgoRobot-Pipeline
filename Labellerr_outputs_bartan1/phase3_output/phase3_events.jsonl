@@ -1,0 +1,12 @@
+{"clip_id": 0, "start_frame": 87, "end_frame": 108, "contact_timestamp_s": 43.5, "separation_timestamp_s": 54.0, "duration_s": 11.0, "peak_velocity": 92.4193, "state": "MANIPULATION", "confidence": 0.808}
+{"clip_id": 1, "start_frame": 178, "end_frame": 182, "contact_timestamp_s": 89.0, "separation_timestamp_s": 91.0, "duration_s": 2.5, "peak_velocity": 79.8337, "state": "MANIPULATION", "confidence": 0.7526}
+{"clip_id": 2, "start_frame": 294, "end_frame": 300, "contact_timestamp_s": 147.0, "separation_timestamp_s": 150.0, "duration_s": 3.5, "peak_velocity": 84.708, "state": "MANIPULATION", "confidence": 0.7802}
+{"clip_id": 3, "start_frame": 314, "end_frame": 342, "contact_timestamp_s": 157.0, "separation_timestamp_s": 171.0, "duration_s": 14.5, "peak_velocity": 82.5948, "state": "MANIPULATION", "confidence": 0.7347}
+{"clip_id": 4, "start_frame": 618, "end_frame": 629, "contact_timestamp_s": 309.0, "separation_timestamp_s": 314.5, "duration_s": 6.0, "peak_velocity": 82.9435, "state": "MANIPULATION", "confidence": 0.7715}
+{"clip_id": 5, "start_frame": 659, "end_frame": 668, "contact_timestamp_s": 329.5, "separation_timestamp_s": 334.0, "duration_s": 5.0, "peak_velocity": 87.512, "state": "MANIPULATION", "confidence": 0.8488}
+{"clip_id": 6, "start_frame": 688, "end_frame": 701, "contact_timestamp_s": 344.0, "separation_timestamp_s": 350.5, "duration_s": 7.0, "peak_velocity": 80.9808, "state": "MANIPULATION", "confidence": 0.7395}
+{"clip_id": 7, "start_frame": 712, "end_frame": 728, "contact_timestamp_s": 356.0, "separation_timestamp_s": 364.0, "duration_s": 8.5, "peak_velocity": 81.1768, "state": "MANIPULATION", "confidence": 0.7501}
+{"clip_id": 8, "start_frame": 754, "end_frame": 786, "contact_timestamp_s": 377.0, "separation_timestamp_s": 393.0, "duration_s": 16.5, "peak_velocity": 85.1155, "state": "MANIPULATION", "confidence": 0.7477}
+{"clip_id": 9, "start_frame": 799, "end_frame": 811, "contact_timestamp_s": 399.5, "separation_timestamp_s": 405.5, "duration_s": 6.5, "peak_velocity": 83.746, "state": "MANIPULATION", "confidence": 0.7715}
+{"clip_id": 10, "start_frame": 1104, "end_frame": 1109, "contact_timestamp_s": 552.0, "separation_timestamp_s": 554.5, "duration_s": 3.0, "peak_velocity": 79.5111, "state": "MANIPULATION", "confidence": 0.7475}
+{"clip_id": 11, "start_frame": 1190, "end_frame": 1196, "contact_timestamp_s": 595.0, "separation_timestamp_s": 598.0, "duration_s": 3.5, "peak_velocity": 76.8673, "state": "MANIPULATION", "confidence": 0.7388}

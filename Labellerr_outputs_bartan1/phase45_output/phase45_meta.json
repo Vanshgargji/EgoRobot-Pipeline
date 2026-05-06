@@ -1,0 +1,8 @@
+{
+  "vla_records": 12,
+  "ok_quality_records": 12,
+  "review_quality_records": 0,
+  "coordinate_space": "unit_cube_normalized",
+  "output_jsonl": "phase45_vla.jsonl",
+  "output_pretty_json": "vla_ready_dataset.json"
+}

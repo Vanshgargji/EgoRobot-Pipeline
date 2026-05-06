@@ -1,0 +1,9 @@
+{
+  "frames_processed": 1200,
+  "events_detected": 12,
+  "segments_exported": 8,
+  "mean_interaction_score": 0.6019,
+  "max_interaction_score": 1.0,
+  "timeline_file": "phase3_timeline.jsonl",
+  "events_file": "phase3_events.jsonl"
+}

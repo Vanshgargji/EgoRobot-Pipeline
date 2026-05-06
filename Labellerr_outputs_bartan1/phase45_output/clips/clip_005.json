@@ -1,0 +1,59 @@
+{
+  "video_id": "bartan1",
+  "episode_index": 5,
+  "clip_id": 5,
+  "language_instruction": "Track the hand as it moves a utensil or container through the workspace.",
+  "observation": {
+    "state": "MANIPULATION",
+    "timestamp_s": [
+      329.5,
+      334.0
+    ],
+    "primary_object": "utensil_or_container",
+    "source_view": "egocentric"
+  },
+  "action": {
+    "start_wrist_pose_6dof": [
+      0.37456,
+      0.47229,
+      0.5,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "end_wrist_pose_6dof": [
+      0.54439,
+      0.47544,
+      0.5,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "relative_pose_6dof": [
+      0.16983,
+      0.00315,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "displacement_mag": 0.16986
+  },
+  "contact_events": [
+    {
+      "type": "CONTACT",
+      "frame": 659,
+      "timestamp_s": 329.5
+    },
+    {
+      "type": "SEPARATION",
+      "frame": 668,
+      "timestamp_s": 334.0
+    }
+  ],
+  "quality_flag": "OK",
+  "coordinate_space": "unit_cube_normalized",
+  "embodiment": "Human-to-Humanoid-Unified",
+  "source_pipeline": "Labellerr-Egocentric-Data-Factory",
+  "version": "1.0-local"
+}

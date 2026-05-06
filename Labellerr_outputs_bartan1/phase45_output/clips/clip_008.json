@@ -1,0 +1,59 @@
+{
+  "video_id": "bartan1",
+  "episode_index": 8,
+  "clip_id": 8,
+  "language_instruction": "Track a sustained utensil handling action from first-person video.",
+  "observation": {
+    "state": "MANIPULATION",
+    "timestamp_s": [
+      377.0,
+      393.0
+    ],
+    "primary_object": "utensil_or_container",
+    "source_view": "egocentric"
+  },
+  "action": {
+    "start_wrist_pose_6dof": [
+      0.32654,
+      0.4428,
+      0.5,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "end_wrist_pose_6dof": [
+      0.38799,
+      0.45124,
+      0.5,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "relative_pose_6dof": [
+      0.06145,
+      0.00844,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "displacement_mag": 0.06203
+  },
+  "contact_events": [
+    {
+      "type": "CONTACT",
+      "frame": 754,
+      "timestamp_s": 377.0
+    },
+    {
+      "type": "SEPARATION",
+      "frame": 786,
+      "timestamp_s": 393.0
+    }
+  ],
+  "quality_flag": "OK",
+  "coordinate_space": "unit_cube_normalized",
+  "embodiment": "Human-to-Humanoid-Unified",
+  "source_pipeline": "Labellerr-Egocentric-Data-Factory",
+  "version": "1.0-local"
+}

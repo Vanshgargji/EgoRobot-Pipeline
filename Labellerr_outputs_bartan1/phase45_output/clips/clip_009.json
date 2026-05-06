@@ -1,0 +1,59 @@
+{
+  "video_id": "bartan1",
+  "episode_index": 9,
+  "clip_id": 9,
+  "language_instruction": "Segment and label the utensil-hand interaction from egocentric video for robot learning.",
+  "observation": {
+    "state": "MANIPULATION",
+    "timestamp_s": [
+      399.5,
+      405.5
+    ],
+    "primary_object": "utensil_or_container",
+    "source_view": "egocentric"
+  },
+  "action": {
+    "start_wrist_pose_6dof": [
+      0.3876,
+      0.50944,
+      0.5,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "end_wrist_pose_6dof": [
+      0.39819,
+      0.52085,
+      0.5,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "relative_pose_6dof": [
+      0.01059,
+      0.01141,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "displacement_mag": 0.01557
+  },
+  "contact_events": [
+    {
+      "type": "CONTACT",
+      "frame": 799,
+      "timestamp_s": 399.5
+    },
+    {
+      "type": "SEPARATION",
+      "frame": 811,
+      "timestamp_s": 405.5
+    }
+  ],
+  "quality_flag": "OK",
+  "coordinate_space": "unit_cube_normalized",
+  "embodiment": "Human-to-Humanoid-Unified",
+  "source_pipeline": "Labellerr-Egocentric-Data-Factory",
+  "version": "1.0-local"
+}

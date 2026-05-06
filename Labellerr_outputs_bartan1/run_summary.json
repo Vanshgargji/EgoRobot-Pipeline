@@ -1,0 +1,66 @@
+{
+  "input": "bartan1.MP4",
+  "output_root": "Labellerr_outputs_bartan1",
+  "runtime_seconds": 351.71,
+  "phase1": {
+    "input_video": "bartan1.MP4",
+    "source_width": 1920,
+    "source_height": 1080,
+    "source_fps": 30.0,
+    "source_duration_seconds": 600.0,
+    "analysis_fps": 2.0,
+    "processed_width": 448,
+    "processed_height": 448,
+    "frames_extracted": 1200,
+    "preprocessing": [
+      "resize_pad",
+      "autocontrast",
+      "contrast_boost",
+      "unsharp_mask"
+    ],
+    "output_preview": "processed_preview.mp4"
+  },
+  "phase2": {
+    "frames_processed": 1200,
+    "mean_velocity": 65.8922,
+    "p90_velocity": 85.6462,
+    "max_velocity": 122.6482,
+    "closed_gripper_proxy_frames": 1,
+    "feature_file": "phase2_features.jsonl",
+    "velocity_profile": "velocity_profiles/velocity_profile.csv",
+    "method_note": "Zero-shot local proxy: motion saliency and hand-object dynamics, no task-specific labels."
+  },
+  "phase3": {
+    "frames_processed": 1200,
+    "events_detected": 12,
+    "segments_exported": 8,
+    "mean_interaction_score": 0.6019,
+    "max_interaction_score": 1.0,
+    "timeline_file": "phase3_timeline.jsonl",
+    "events_file": "phase3_events.jsonl"
+  },
+  "phase45": {
+    "vla_records": 12,
+    "ok_quality_records": 12,
+    "review_quality_records": 0,
+    "coordinate_space": "unit_cube_normalized",
+    "output_jsonl": "phase45_vla.jsonl",
+    "output_pretty_json": "vla_ready_dataset.json"
+  },
+  "phase6": {
+    "records_total": 12,
+    "records_clean": 12,
+    "records_review": 0,
+    "records_flagged": 0,
+    "jsonl_integrity_rate_percent": 100.0,
+    "schema_validation_rate_percent": 100.0,
+    "output_file": "final_robot_dataset.jsonl"
+  },
+  "phase7": {
+    "dashboard_video": "PHASE7_MASTER_DASHBOARD.mp4",
+    "dashboard_frames_rendered": 1200,
+    "playback_fps": 12,
+    "source_analysis_fps": 2.0,
+    "duration_seconds": 100.0
+  }
+}
