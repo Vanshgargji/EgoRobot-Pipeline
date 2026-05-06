@@ -1,4 +1,4 @@
-# Labellerr-Aligned Egocentric Robotics Data Factory
+# Egocentric Robotics Data Factory
 
 Turn a raw first-person utensil video into segmented, audited, VLA-ready robotics training data.
 
@@ -10,11 +10,11 @@ If you are reviewing this project for the first time, open these files in order:
 
 | Step | Open | Why it matters |
 |---|---|---|
-| 1 | `Labellerr_outputs_bartan1/phase7_output/PHASE7_MASTER_DASHBOARD.mp4` | Fastest visual proof of the full pipeline |
-| 2 | `Labellerr_outputs_bartan1/phase6_output/phase6_dashboard.png` | Shows dataset quality and validation result |
-| 3 | `Labellerr_outputs_bartan1/phase3_output/phase3_timeline_plot.png` | Shows detected action windows across the video |
-| 4 | `Labellerr_outputs_bartan1/phase45_output/vla_ready_dataset.json` | Shows structured robotics-ready records |
-| 5 | `Labellerr_outputs_bartan1/phase6_output/final_robot_dataset.jsonl` | Final validated dataset export |
+| 1 | [`Labellerr_outputs_bartan1/phase7_output/PHASE7_MASTER_DASHBOARD.mp4`](./Labellerr_outputs_bartan1/phase7_output/PHASE7_MASTER_DASHBOARD.mp4) | Fastest visual proof of the full pipeline |
+| 2 | [`Labellerr_outputs_bartan1/phase6_output/phase6_dashboard.png`](./Labellerr_outputs_bartan1/phase6_output/phase6_dashboard.png) | Shows dataset quality and validation result |
+| 3 | [`Labellerr_outputs_bartan1/phase3_output/phase3_timeline_plot.png`](./Labellerr_outputs_bartan1/phase3_output/phase3_timeline_plot.png) | Shows detected action windows across the video |
+| 4 | [`Labellerr_outputs_bartan1/phase45_output/vla_ready_dataset.json`](./Labellerr_outputs_bartan1/phase45_output/vla_ready_dataset.json) | Shows structured robotics-ready records |
+| 5 | [`Labellerr_outputs_bartan1/phase6_output/final_robot_dataset.jsonl`](./Labellerr_outputs_bartan1/phase6_output/final_robot_dataset.jsonl) | Final validated dataset export |
 
 ## Project Snapshot
 
@@ -34,10 +34,8 @@ If you are reviewing this project for the first time, open these files in order:
 | Demo video duration | `100 seconds` |
 
 Full metrics are available in:
-
-```text
-Labellerr_outputs_bartan1/run_summary.json
-```
+<br>
+[`Labellerr_outputs_bartan1/run_summary.json`](./Labellerr_outputs_bartan1/run_summary.json)
 
 ## What We Built
 
@@ -53,11 +51,9 @@ The pipeline performs:
 6. Dataset validation and audit metadata creation
 7. A director-cut demo video for easy inspection
 
-The original notebook, `Labellerr.ipynb`, was Colab-oriented and referenced helper scripts that were not present as standalone files. To make the work reproducible locally, the same phase structure has been implemented in:
-
-```text
-run_labellerr_pipeline.py
-```
+The original notebook, [`Labellerr.ipynb`](./Labellerr.ipynb), was Colab-oriented and referenced helper scripts that were not present as standalone files. To make the work reproducible locally, the same phase structure has been implemented in:
+<br>
+[`run_labellerr_pipeline.py`](./run_labellerr_pipeline.py)
 
 ## Why This Fits Labellerr
 
@@ -79,19 +75,17 @@ Positioning statement:
 ## Output Map
 
 All generated outputs are saved inside:
-
-```text
-Labellerr_outputs_bartan1/
-```
+<br>
+[`Labellerr_outputs_bartan1/`](./Labellerr_outputs_bartan1/)
 
 | Folder | Purpose |
 |---|---|
-| `phase1_output/` | Clean processed frames and preview video |
-| `phase2_output/` | Frame-level features, motion plots, visual annotations |
-| `phase3_output/` | Action segments, contact/separation events, timeline |
-| `phase45_output/` | VLA-ready action records and per-clip JSON |
-| `phase6_output/` | Final audited dataset and validation dashboard |
-| `phase7_output/` | Final demo dashboard video |
+| [`phase1_output/`](./Labellerr_outputs_bartan1/phase1_output/) | Clean processed frames and preview video |
+| [`phase2_output/`](./Labellerr_outputs_bartan1/phase2_output/) | Frame-level features, motion plots, visual annotations |
+| [`phase3_output/`](./Labellerr_outputs_bartan1/phase3_output/) | Action segments, contact/separation events, timeline |
+| [`phase45_output/`](./Labellerr_outputs_bartan1/phase45_output/) | VLA-ready action records and per-clip JSON |
+| [`phase6_output/`](./Labellerr_outputs_bartan1/phase6_output/) | Final audited dataset and validation dashboard |
+| [`phase7_output/`](./Labellerr_outputs_bartan1/phase7_output/) | Final demo dashboard video |
 
 ## Phase Walkthrough
 
@@ -101,9 +95,9 @@ The raw video is sampled, resized, contrast-normalized, sharpened, and stored as
 
 | Open this | Purpose |
 |---|---|
-| `Labellerr_outputs_bartan1/phase1_output/processed_preview.mp4` | Preview the cleaned video stream |
-| `Labellerr_outputs_bartan1/phase1_output/processed_frames/` | Inspect extracted processed frames |
-| `Labellerr_outputs_bartan1/phase1_output/phase1_meta.json` | View preprocessing metadata |
+| [`Labellerr_outputs_bartan1/phase1_output/processed_preview.mp4`](./Labellerr_outputs_bartan1/phase1_output/processed_preview.mp4) | Preview the cleaned video stream |
+| [`Labellerr_outputs_bartan1/phase1_output/processed_frames/`](./Labellerr_outputs_bartan1/phase1_output/processed_frames/) | Inspect extracted processed frames |
+| [`Labellerr_outputs_bartan1/phase1_output/phase1_meta.json`](./Labellerr_outputs_bartan1/phase1_output/phase1_meta.json) | View preprocessing metadata |
 
 What to notice: the raw 10-minute video becomes a standardized frame dataset that later phases can process reliably.
 
@@ -113,11 +107,11 @@ The pipeline estimates hand/object activity using motion saliency. This avoids r
 
 | Open this | Purpose |
 |---|---|
-| `Labellerr_outputs_bartan1/phase2_output/velocity_plot.png` | Visualize motion intensity over time |
-| `Labellerr_outputs_bartan1/phase2_output/phase2_features.jsonl` | See frame-level feature records |
-| `Labellerr_outputs_bartan1/phase2_output/velocity_profiles/velocity_profile.csv` | Inspect velocity data |
-| `Labellerr_outputs_bartan1/phase2_output/visualisations/` | View annotated sample frames |
-| `Labellerr_outputs_bartan1/phase2_output/phase2_meta.json` | View phase metrics |
+| [`Labellerr_outputs_bartan1/phase2_output/velocity_plot.png`](./Labellerr_outputs_bartan1/phase2_output/velocity_plot.png) | Visualize motion intensity over time |
+| [`Labellerr_outputs_bartan1/phase2_output/phase2_features.jsonl`](./Labellerr_outputs_bartan1/phase2_output/phase2_features.jsonl) | See frame-level feature records |
+| [`Labellerr_outputs_bartan1/phase2_output/velocity_profiles/velocity_profile.csv`](./Labellerr_outputs_bartan1/phase2_output/velocity_profiles/velocity_profile.csv) | Inspect velocity data |
+| [`Labellerr_outputs_bartan1/phase2_output/visualisations/`](./Labellerr_outputs_bartan1/phase2_output/visualisations/) | View annotated sample frames |
+| [`Labellerr_outputs_bartan1/phase2_output/phase2_meta.json`](./Labellerr_outputs_bartan1/phase2_output/phase2_meta.json) | View phase metrics |
 
 What to notice: this phase turns plain video frames into machine-readable annotation signals.
 
@@ -127,12 +121,12 @@ The interaction signals are smoothed and segmented into useful action windows. E
 
 | Open this | Purpose |
 |---|---|
-| `Labellerr_outputs_bartan1/phase3_output/phase3_timeline_plot.png` | See detected interaction windows |
-| `Labellerr_outputs_bartan1/phase3_output/phase3_events.jsonl` | Inspect start/end event records |
-| `Labellerr_outputs_bartan1/phase3_output/phase3_timeline.jsonl` | Inspect frame-by-frame timeline labels |
-| `Labellerr_outputs_bartan1/phase3_output/segments/` | Watch extracted action clips |
-| `Labellerr_outputs_bartan1/phase3_output/visualisations/` | View phase visual examples |
-| `Labellerr_outputs_bartan1/phase3_output/phase3_meta.json` | View phase metrics |
+| [`Labellerr_outputs_bartan1/phase3_output/phase3_timeline_plot.png`](./Labellerr_outputs_bartan1/phase3_output/phase3_timeline_plot.png) | See detected interaction windows |
+| [`Labellerr_outputs_bartan1/phase3_output/phase3_events.jsonl`](./Labellerr_outputs_bartan1/phase3_output/phase3_events.jsonl) | Inspect start/end event records |
+| [`Labellerr_outputs_bartan1/phase3_output/phase3_timeline.jsonl`](./Labellerr_outputs_bartan1/phase3_output/phase3_timeline.jsonl) | Inspect frame-by-frame timeline labels |
+| [`Labellerr_outputs_bartan1/phase3_output/segments/`](./Labellerr_outputs_bartan1/phase3_output/segments/) | Watch extracted action clips |
+| [`Labellerr_outputs_bartan1/phase3_output/visualisations/`](./Labellerr_outputs_bartan1/phase3_output/visualisations/) | View phase visual examples |
+| [`Labellerr_outputs_bartan1/phase3_output/phase3_meta.json`](./Labellerr_outputs_bartan1/phase3_output/phase3_meta.json) | View phase metrics |
 
 What to notice: the system finds which parts of the long video are useful for robotics training.
 
@@ -142,11 +136,11 @@ Detected action clips are converted into VLA-style records with language instruc
 
 | Open this | Purpose |
 |---|---|
-| `Labellerr_outputs_bartan1/phase45_output/vla_ready_dataset.json` | Human-readable VLA dataset |
-| `Labellerr_outputs_bartan1/phase45_output/phase45_vla.jsonl` | JSONL records for downstream training |
-| `Labellerr_outputs_bartan1/phase45_output/clips/` | Per-clip annotation JSON files |
-| `Labellerr_outputs_bartan1/phase45_output/phase45_timeline_plot.png` | VLA action timeline |
-| `Labellerr_outputs_bartan1/phase45_output/phase45_meta.json` | View phase metrics |
+| [`Labellerr_outputs_bartan1/phase45_output/vla_ready_dataset.json`](./Labellerr_outputs_bartan1/phase45_output/vla_ready_dataset.json) | Human-readable VLA dataset |
+| [`Labellerr_outputs_bartan1/phase45_output/phase45_vla.jsonl`](./Labellerr_outputs_bartan1/phase45_output/phase45_vla.jsonl) | JSONL records for downstream training |
+| [`Labellerr_outputs_bartan1/phase45_output/clips/`](./Labellerr_outputs_bartan1/phase45_output/clips/) | Per-clip annotation JSON files |
+| [`Labellerr_outputs_bartan1/phase45_output/phase45_timeline_plot.png`](./Labellerr_outputs_bartan1/phase45_output/phase45_timeline_plot.png) | VLA action timeline |
+| [`Labellerr_outputs_bartan1/phase45_output/phase45_meta.json`](./Labellerr_outputs_bartan1/phase45_output/phase45_meta.json) | View phase metrics |
 
 Example record shape:
 
@@ -157,79 +151,3 @@ Example record shape:
   "coordinate_space": "unit_cube_normalized",
   "embodiment": "Human-to-Humanoid-Unified"
 }
-```
-
-What to notice: raw video has become structured robotics data with language, action, contact, and quality fields.
-
-### Phase 6: Quality Validation
-
-Every exported record is audited for simple schema and physics sanity. This creates review-ready metadata for a Labellerr-style feedback workflow.
-
-| Open this | Purpose |
-|---|---|
-| `Labellerr_outputs_bartan1/phase6_output/phase6_dashboard.png` | Visual quality summary |
-| `Labellerr_outputs_bartan1/phase6_output/final_robot_dataset.jsonl` | Final validated dataset |
-| `Labellerr_outputs_bartan1/phase6_output/validation_report.json` | Validation report |
-| `Labellerr_outputs_bartan1/phase6_output/phase6_meta.json` | View phase metrics |
-
-What to notice: the pipeline does not only generate labels; it also checks whether records are clean enough to use.
-
-### Phase 7: Director-Cut Demo
-
-The final demo overlays the egocentric video with interaction state, progress score, velocity profile, and detected action windows.
-
-| Open this | Purpose |
-|---|---|
-| `Labellerr_outputs_bartan1/phase7_output/PHASE7_MASTER_DASHBOARD.mp4` | Watch the full visual demo |
-| `Labellerr_outputs_bartan1/phase7_output/phase7_meta.json` | View demo metadata |
-
-What to notice: this is the fastest way to understand the complete pipeline without reading the raw JSON files first.
-
-## Repository Files
-
-| File | Purpose |
-|---|---|
-| `README.md` | Project explanation and interviewer walkthrough |
-| `run_labellerr_pipeline.py` | Reproducible local pipeline runner |
-| `Labellerr.ipynb` | Original notebook from the hackathon work |
-| Robotics Data Hackathon problem statement PDF | Hackathon problem statement |
-| `Venture Lab Hackathon.docx` | Notes and planning collected during the hackathon |
-| `Labellerr AI.docx` | Company research and Labellerr alignment notes |
-| `Labellerr_outputs_bartan1/` | Generated output artifacts |
-
-Note: `bartan1.MP4` is ignored by git because it is larger than GitHub's normal file-size limit. Keep it in Drive, Git LFS, or another artifact store when reproducing the run.
-
-## How To Reproduce
-
-From this folder:
-
-```powershell
-python run_labellerr_pipeline.py --input bartan1.MP4 --output Labellerr_outputs_bartan1 --analysis-fps 2 --size 448
-```
-
-For a denser analysis run:
-
-```powershell
-python run_labellerr_pipeline.py --input bartan1.MP4 --output Labellerr_outputs_bartan1_highfps --analysis-fps 5 --size 448
-```
-
-## Internship-Relevant Skills Demonstrated
-
-- Computer vision preprocessing
-- Egocentric video analysis
-- Automated annotation signal generation
-- Action segmentation
-- Dataset structuring with JSON and JSONL
-- Quality validation and audit metadata
-- Human review workflow thinking
-- Robotics and embodied AI data preparation
-
-## Next Improvements
-
-With Labellerr mentorship or infrastructure, this can be extended further:
-
-- Replace motion proxies with model-assisted hand pose and object segmentation.
-- Add LabelGPT-style prompt-based object and action labels.
-- Add a human review UI for low-confidence clips.
-- Store accepted and rejected corrections as a feedback loop.
-- Export to additional robotics formats such as EgoHumanoid-compatible schemas.
