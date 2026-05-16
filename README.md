@@ -183,3 +183,50 @@ Example record shape:
   "coordinate_space": "unit_cube_normalized",
   "embodiment": "Human-to-Humanoid-Unified"
 }
+```
+
+What to notice: raw video has become structured robotics data with language, action, contact, and quality fields.
+
+### Phase 6: Quality Validation
+
+Every exported record is audited for simple schema and physics sanity. This creates review-ready metadata for a Labellerr-style feedback workflow.
+
+| Open this | Purpose |
+|---|---|
+| [`Labellerr_outputs_bartan1/phase6_output/phase6_dashboard.png`](./Labellerr_outputs_bartan1/phase6_output/phase6_dashboard.png) | Visual quality summary |
+| [`Labellerr_outputs_bartan1/phase6_output/final_robot_dataset.jsonl`](./Labellerr_outputs_bartan1/phase6_output/final_robot_dataset.jsonl) | Final validated dataset |
+| [`Labellerr_outputs_bartan1/phase6_output/validation_report.json`](./Labellerr_outputs_bartan1/phase6_output/validation_report.json) | Validation report |
+| [`Labellerr_outputs_bartan1/phase6_output/phase6_meta.json`](./Labellerr_outputs_bartan1/phase6_output/phase6_meta.json) | View phase metrics |
+
+What to notice: the pipeline does not only generate labels; it also checks whether records are clean enough to use.
+
+### Phase 7: Director-Cut Demo
+
+The final demo overlays the egocentric video with interaction state, progress score, velocity profile, and detected action windows.
+
+| Open this | Purpose |
+|---|---|
+| [`Labellerr_outputs_bartan1/phase7_output/PHASE7_MASTER_DASHBOARD.mp4`](./Labellerr_outputs_bartan1/phase7_output/PHASE7_MASTER_DASHBOARD.mp4) | Watch the full visual demo |
+| [`Labellerr_outputs_bartan1/phase7_output/phase7_meta.json`](./Labellerr_outputs_bartan1/phase7_output/phase7_meta.json) | View demo metadata |
+
+What to notice: this is the fastest way to understand the complete pipeline without reading the raw JSON files first.
+
+## Repository Files
+
+| File | Purpose |
+|---|---|
+| [`README.md`](./README.md) | Project explanation and interviewer walkthrough |
+| [`run_labellerr_pipeline.py`](./run_labellerr_pipeline.py) | Reproducible local pipeline runner |
+| [`Labellerr.ipynb`](./Labellerr.ipynb) | Original notebook from the hackathon work |
+| Robotics Data Hackathon problem statement PDF | Hackathon problem statement |
+| `Venture Lab Hackathon.docx` | Notes and planning collected during the hackathon |
+| `Labellerr AI.docx` | Company research and Labellerr alignment notes |
+| [`Labellerr_outputs_bartan1/`](./Labellerr_outputs_bartan1/) | Generated output artifacts |
+
+Note: `bartan1.MP4` is ignored by git because it is larger than GitHub's normal file-size limit. Keep it in Drive, Git LFS, or another artifact store when reproducing the run.
+
+## How To Reproduce
+
+From this folder:
+```powershell
+python run_labellerr_pipeline.py --input bartan1.MP4 --output Labellerr_outputs_bartan1 --analysis-fps 2 --size 448
