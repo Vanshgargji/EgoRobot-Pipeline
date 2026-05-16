@@ -1,0 +1,150 @@
+{
+  "model": "numpy_logistic_regression_binary_action_segmenter",
+  "input_video": "bartan1.MP4",
+  "training_scope": "first_300_seconds",
+  "label_definition": "0=idle/no interaction, 1=hand-object interaction/action",
+  "label_source": "prototype ground-truth windows from phase3 interaction events; should be replaced with human labels for final reporting",
+  "frames_used": 601,
+  "positive_action_frames": 63,
+  "idle_frames": 538,
+  "train_frames": 421,
+  "test_frames": 180,
+  "decision_threshold": 0.595,
+  "train_metrics_at_threshold": {
+    "accuracy": 0.8147,
+    "precision": 0.33,
+    "recall": 0.75,
+    "f1_score": 0.4583,
+    "true_positive": 33,
+    "true_negative": 310,
+    "false_positive": 67,
+    "false_negative": 11
+  },
+  "test_metrics": {
+    "accuracy": 0.8389,
+    "precision": 0.3529,
+    "recall": 0.6316,
+    "f1_score": 0.4528,
+    "true_positive": 12,
+    "true_negative": 139,
+    "false_positive": 22,
+    "false_negative": 7
+  },
+  "temporal_iou": 0.2961,
+  "true_segments_frame_index": [
+    [
+      87,
+      108
+    ],
+    [
+      178,
+      182
+    ],
+    [
+      294,
+      300
+    ],
+    [
+      314,
+      342
+    ]
+  ],
+  "predicted_segments_frame_index": [
+    [
+      5,
+      9
+    ],
+    [
+      34,
+      35
+    ],
+    [
+      73,
+      76
+    ],
+    [
+      88,
+      109
+    ],
+    [
+      121,
+      126
+    ],
+    [
+      181,
+      184
+    ],
+    [
+      198,
+      201
+    ],
+    [
+      215,
+      224
+    ],
+    [
+      232,
+      242
+    ],
+    [
+      256,
+      257
+    ],
+    [
+      272,
+      273
+    ],
+    [
+      286,
+      287
+    ],
+    [
+      295,
+      301
+    ],
+    [
+      316,
+      330
+    ],
+    [
+      334,
+      335
+    ],
+    [
+      338,
+      341
+    ],
+    [
+      475,
+      479
+    ],
+    [
+      482,
+      495
+    ],
+    [
+      529,
+      532
+    ],
+    [
+      548,
+      551
+    ],
+    [
+      589,
+      592
+    ]
+  ],
+  "features": [
+    "velocity",
+    "motion_area",
+    "hand_object_distance_proxy",
+    "wrist_x",
+    "wrist_y",
+    "acceleration",
+    "rolling_velocity_mean_5",
+    "rolling_velocity_mean_10",
+    "rolling_velocity_max_10",
+    "rolling_motion_area_mean_5"
+  ]
+}

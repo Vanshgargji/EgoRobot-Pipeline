@@ -32,6 +32,7 @@ If you are reviewing this project for the first time, open these files in order:
 | Clean validation records | `12` |
 | Flagged records | `0` |
 | Demo video duration | `100 seconds` |
+| Prototype model accuracy | `83.9%` |
 
 Full metrics are available in:
 <br>
@@ -86,6 +87,37 @@ All generated outputs are saved inside:
 | [`phase45_output/`](./Labellerr_outputs_bartan1/phase45_output/) | VLA-ready action records and per-clip JSON |
 | [`phase6_output/`](./Labellerr_outputs_bartan1/phase6_output/) | Final audited dataset and validation dashboard |
 | [`phase7_output/`](./Labellerr_outputs_bartan1/phase7_output/) | Final demo dashboard video |
+| [`model_output/`](./Labellerr_outputs_bartan1/model_output/) | Prototype action/idle model, predictions, and accuracy report |
+
+## Prototype Model Accuracy
+
+To provide a measurable model result, we trained a lightweight binary action-segmentation model on the first 5 minutes of `bartan1.MP4`.
+
+The model predicts:
+
+```text
+0 = idle / no useful hand-object interaction
+1 = action / hand-object interaction
+```
+
+| Metric | Result |
+|---|---:|
+| Held-out frame accuracy | `83.9%` |
+| Precision | `35.3%` |
+| Recall | `63.2%` |
+| F1-score | `45.3%` |
+| Temporal IoU | `29.6%` |
+
+Open these outputs:
+
+| Open this | Purpose |
+|---|---|
+| [`model_accuracy_card.png`](./Labellerr_outputs_bartan1/model_output/model_accuracy_card.png) | Visual accuracy summary |
+| [`model_metrics.json`](./Labellerr_outputs_bartan1/model_output/model_metrics.json) | Full metric report |
+| [`predictions.csv`](./Labellerr_outputs_bartan1/model_output/predictions.csv) | Frame-level predictions |
+| [`action_segmenter_model.npz`](./Labellerr_outputs_bartan1/model_output/action_segmenter_model.npz) | Saved lightweight model weights |
+
+Important note: this is a prototype action-segmentation baseline. The next step is to replace prototype labels with a manually labelled ground-truth set and report final precision, recall, F1-score, and temporal IoU against human annotations.
 
 ## Phase Walkthrough
 
